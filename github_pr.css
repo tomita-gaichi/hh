@@ -170,36 +170,45 @@ display: none;
    .h-color{
         transition: .2s;
    }
-   .h-color:hover{
+   .open:hover .h-color{
       color: #F79314;
+   }
+   .car:hover .h-color{
+     color: #F79314;
    }
   .link-button:hover{
        transition: opacity 0.2s;
       opacity: .7;
    }
-   .las-img{
-     transition: transform 0.2s;       
+   
+     .las-img{
+       transition: transform .2s;
    }
-   .las-img:hover{
-        transform: scale(1.1);
+
+li:hover .las-img{
+    
+       transform: scale(1.05);
+}
+
+
+
+
+
+   .las-red-p{
+        transition: .2s;
    }
-   .las-red-p {
-       transition: transform 0.2s;
+   
+  li:hover .las-red-p{
+       color: #F79314;
    }
-   .las-red-p:hover{
-     color: #F79314;
-   }
-   .service-media:hover{
-     transform: scale(1.05);
-   }
+   
+   
+   
+   
    .ot-b{
        transition: transform .2s;
    }
- .ot-b:hover{
-       transform: scale(1.1);
-   }
-.ot:hover{
-     transition: opacity 0.2s;
+li:hover .ot-b{
    
        transform: scale(1.1);
 }
@@ -212,11 +221,20 @@ display: none;
         transition: .2s;
    }
    
-  a:hover.ot-g,.ot-g:hover{
+  li:hover .ot-g{
        color: #F79314;
    }
    
-   
+    .page-top:hover {
+    background-color: #F79214;
+}
+
+    .page-top:hover .aee-top {
+      border-left: solid 3px #FFFFFF;
+      border-top: solid 3px #FFFFFF;
+    }
+  
+
     .ap-footer:hover {
     transition: opacity 0.2s;
       opacity: .7;
@@ -663,6 +681,7 @@ display: none;
     margin-left: -50px;
     margin-right: 30px;
     border: solid 3px;
+     border-color: #f76d14;
     display: flex;
 
 }
@@ -751,6 +770,7 @@ width: calc(70% + 30px);
     margin-left: -50px;
     margin-right: 30px;
     border: solid 3px;
+     border-color: #f76d14;
     display: flex;
 }
 .diii-h{
@@ -947,12 +967,13 @@ display: none !important;
     padding-left: 20px;
     width: calc(100% / 3);
 }
-.las-red{
+.las-red{ 
+    border: solid 2px;
     border-color: #fc6803;
     display: flex;
     align-items: center;
     background-color: #fff;
-    border: solid 2px;
+   
     border-radius: 10px;
     padding: 0 20px;
     height: 190px;
@@ -969,11 +990,11 @@ display: none !important;
     line-height: 1.8;
 }
 .las-gre{
+   border: solid 2px;
     border-color: #08af77;
     display: flex;
     align-items: center;
     background-color: #fff;
-    border: solid 2px;
     border-radius: 10px;
     padding: 0 20px;
     height: 190px;
