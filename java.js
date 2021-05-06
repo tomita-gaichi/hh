@@ -24,7 +24,7 @@
 
     //ミリ秒の表示ではなく、分とか秒に直すための関数, 他のところからも呼び出すので別関数として作る
     //計算方法として135200ミリ秒経過したとしてそれを分とか秒に直すと -> 02:15:200
-    function updateTimetText(){
+   function updateTimetText(){
 
         //m(分) = 135200 / 60000ミリ秒で割った数の商　-> 2分
         var m = Math.floor(elapsedTime / 60000);
@@ -54,7 +54,7 @@
     function countUp(){
 
         //timerId変数はsetTimeoutの返り値になるので代入する
-        timerId = setTimeout(function(){
+      timerId = setTimeout(function(){
 
             //経過時刻は現在時刻をミリ秒で示すDate.now()からstartを押した時の時刻(startTime)を引く
             elapsedTime = Date.now() - startTime + timeToadd;

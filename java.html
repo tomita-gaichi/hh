@@ -2,20 +2,20 @@
     <html lang="en">
       <head>
         <meta charset="utf-8">
-        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+        <!--<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+        -->
         <link rel="stylesheet" href="java.css">
         <title>ストップウォッチ</title>
       </head>
  
-      <body>
+     <body>
         <h3>ストップウォッチ</h3>
 　　　　　<div id="timer">0:0:0:0</div>
-        <button id="start">スタート</button>
-        <button id="stop">ストップ</button>
-        <button id="reset">リセット</button>
+        <button  class="btn" id="start" onclick="this.disabled = true;">スタート</button>
+        <button class="btn" id="stop" onclick="getElementById('start').disabled = false;">ストップ</button>
+        <button class="btn" id="reset"  onclick="getElementById('start').disabled = false;" >リセット</button>
  
-        <!-- ここに記述していきましょう！ -->
  
         <script src="java.js"></script>
-      </body>
+      </body> 
     </html>
