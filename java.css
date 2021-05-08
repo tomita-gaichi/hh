@@ -1,4 +1,4 @@
-button{
+/*button{
   background-color:#c0c0c0; 
   
 }
@@ -7,4 +7,15 @@ div{
 }
 .btn:hover{
   opacity: 0.6;
+}*/
+button{
+  width:50px;
+  height:50px;
+}
+input{
+  color:#ffffff;
+  background-color:#000000;
+  width:100%;
+  height:60px;
+  font-size:70px;
 }
