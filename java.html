@@ -15,29 +15,39 @@
         <button class="btn" id="stop" onclick="getElementById('start').disabled = false;">ストップ</button>
         <button class="btn" id="reset"  onclick="getElementById('start').disabled = false;" >リセット</button>
          -->
-     　<input />
-     
-     　<button onclick="ap('1')">1</button>
-     　<button onclick="ap('2')">2</button>
-     　<button onclick="ap('3')">3</button>
+         <div class="a">
+     　<input class="out" />
+     　<div class="input">
+     　 <section class="row ko">
+      <button class="ui"　onclick="ap('7')">7</button>
+      <button  class="ui" onclick="ap('8')">8</button>
+      <button  class="ui" onclick="ap('9')">9</button> 
+      <button  class="ui" onclick="ap('+')">+</button>
+     　 </section>
+        <section class="row">
        <button onclick="ap('4')">4</button>
       <button onclick="ap('5')">5</button>
-      　<button onclick="ap('6')">6</button>
-       <button onclick="ap('7')">7</button> 
-       <button onclick="ap('8')">8</button>
-       <button onclick="ap('9')">9</button>
-       <button onclick="ap('+')">+</button>
+       <button onclick="ap('6')">6</button> 
        <button onclick="ap('-')">-</button>
+       </section>
+       <section class="row">
+        <button onclick="ap('1')">1</button>
+        <button onclick="ap('2')">2</button>
+       <button onclick="ap('3')">3</button>
        <button onclick="ap('*')">*</button>
+       </section>
+       <section class="row">
+       <button onclick="ap('0')">0</button>
        <button onclick="ap('/')">/</button>
-       
        <button onclick="ca()">=</button>
-       
-       <button onclick="up('')">AC</button>       　　
-       　　
+       <button onclick="up('')">AC</button>  
+       </section>
+       </div>
+       </div>
+       　
        　　
        　　　 <script src="java.js"></script>
-       　　
+       　　</div>
        　　
        　　
        　
