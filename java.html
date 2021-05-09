@@ -1,56 +1,43 @@
-<!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8">
-        <!--<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
-        -->
-        <link rel="stylesheet" href="java.css">
-        <title>ストップウォッチ</title>
-      </head>
- 
-     <body>
-       <!--<h3>ストップウォッチ</h3>
-　　　　　<div id="timer">0:0:0:0</div>
-        <button  class="btn" id="start" onclick="this.disabled = true;">スタート</button>
-        <button class="btn" id="stop" onclick="getElementById('start').disabled = false;">ストップ</button>
-        <button class="btn" id="reset"  onclick="getElementById('start').disabled = false;" >リセット</button>
-         -->
-         <div class="a">
-     　<input class="out" />
-     　<div class="input">
-     　 <section class="row ko">
-      <button class="ui"　onclick="ap('7')">7</button>
-      <button  class="ui" onclick="ap('8')">8</button>
-      <button  class="ui" onclick="ap('9')">9</button> 
-      <button  class="ui" onclick="ap('+')">+</button>
-     　 </section>
-        <section class="row">
-       <button onclick="ap('4')">4</button>
-      <button onclick="ap('5')">5</button>
-       <button onclick="ap('6')">6</button> 
-       <button onclick="ap('-')">-</button>
-       </section>
-       <section class="row">
-        <button onclick="ap('1')">1</button>
-        <button onclick="ap('2')">2</button>
-       <button onclick="ap('3')">3</button>
-       <button onclick="ap('*')">*</button>
-       </section>
-       <section class="row">
-       <button onclick="ap('0')">0</button>
-       <button onclick="ap('/')">/</button>
-       <button onclick="ca()">=</button>
-       <button onclick="up('')">AC</button>  
-       </section>
-       </div>
-       </div>
-       　
-       　　
-       　　　 <script src="java.js"></script>
-       　　</div>
-       　　
-       　　
-       　
-       
-      </body> 
-    </html>
+       <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>電卓</title>
+    <link rel="stylesheet" href="java.css">
+  </head>
+  <body>
+    <div class = "container">
+<!--      計算結果を出力する場所-->
+<!--      計算過程を出力する -->
+      <div id = "output_sub" class="output active">0</div>
+<!--      ボタンを配置する場所-->
+      <div class = 'input'>
+          <section class = 'row'>
+            <div class = "num_bth one_nine " data-index-id = 9 >9</div>
+            <div class = "num_bth one_nine " data-index-id = 8 >8</div>
+            <div class = "num_bth one_nine " data-index-id = 7 >7</div>
+            <div class = "num_bth cal" data-index-id = '+'>+</div>
+          </section>
+          <section class = 'row'>
+            <div class = "num_bth one_nine " data-index-id = 6 >6</div>
+            <div class = "num_bth one_nine " data-index-id = 5 >5</div>
+            <div class = "num_bth one_nine " data-index-id = 4 >4</div>
+            <div class = "num_bth cal" data-index-id = '-'>－</div>     
+          </section>
+          <section class = 'row'>
+            <div class = "num_bth one_nine " data-index-id = 3 >3</div>
+            <div class = "num_bth  one_nine" data-index-id = 2 >2</div>
+            <div class = "num_bth  one_nine" data-index-id = 1 >1</div>
+            <div class = "num_bth cal" data-index-id = '*'>*</div>
+          </section>
+          <section class = 'row'>
+             <div id = "clear">AC</div>
+            <div class = "num_bth" id="zero" data-index-id = 0 >0</div>
+            <div id = 'equal_btn'>=</div> 
+             <div class = "num_bth cal" data-index-id= '/'>÷</div>
+          </section>        
+      </div>
+    </div>
+    <script src="java.js"></script>
+  </body>
+</html>
