@@ -1,43 +1,22 @@
-       <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>電卓</title>
+   <html>
+   <meta charset="utf-8">
     <link rel="stylesheet" href="java.css">
-  </head>
-  <body>
-    <div class = "container">
-<!--      計算結果を出力する場所-->
-<!--      計算過程を出力する -->
-      <div id = "output_sub" class="output active">0</div>
-<!--      ボタンを配置する場所-->
-      <div class = 'input'>
-          <section class = 'row'>
-            <div class = "num_bth one_nine " data-index-id = 9 >9</div>
-            <div class = "num_bth one_nine " data-index-id = 8 >8</div>
-            <div class = "num_bth one_nine " data-index-id = 7 >7</div>
-            <div class = "num_bth cal" data-index-id = '+'>+</div>
-          </section>
-          <section class = 'row'>
-            <div class = "num_bth one_nine " data-index-id = 6 >6</div>
-            <div class = "num_bth one_nine " data-index-id = 5 >5</div>
-            <div class = "num_bth one_nine " data-index-id = 4 >4</div>
-            <div class = "num_bth cal" data-index-id = '-'>－</div>     
-          </section>
-          <section class = 'row'>
-            <div class = "num_bth one_nine " data-index-id = 3 >3</div>
-            <div class = "num_bth  one_nine" data-index-id = 2 >2</div>
-            <div class = "num_bth  one_nine" data-index-id = 1 >1</div>
-            <div class = "num_bth cal" data-index-id = '*'>*</div>
-          </section>
-          <section class = 'row'>
-             <div id = "clear">AC</div>
-            <div class = "num_bth" id="zero" data-index-id = 0 >0</div>
-            <div id = 'equal_btn'>=</div> 
-             <div class = "num_bth cal" data-index-id= '/'>÷</div>
-          </section>        
-      </div>
-    </div>
-    <script src="java.js"></script>
-  </body>
+        <title>リアルタイムフィルター機能</title>
+<body>
+<div id="app">
+    <input type="text" v-model="keyword">
+    <table>
+        <tr v-for="user in filteredUsers" :key="user.id">
+            <td v-text="user.id"></td>
+            <td v-text="user.name"></td>
+            <td v-text="user.email"></td>
+              <td>
+            <img　class="ga" :src="user.imageUrl">
+        </td>
+        </tr>
+    </table>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
+<script src="java.js"></script>
+</body>
 </html>
