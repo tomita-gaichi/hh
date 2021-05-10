@@ -14,19 +14,19 @@
                 {
                     id: 2,
                     name: '男の娘',
-                    email: '１６歳',
+                    email: '１７歳',
                     imageUrl:'https://pics.prcm.jp/53193/29463263/jpeg/29463263_220x217.jpeg'
                 },
                 {
                     id: 3,
                     name: '少年',
-                    email: '１６歳',
+                    email: '１４歳',
                     imageUrl:'https://dic.nicovideo.jp/oekaki/18570.png'
                 },
                 {
                     id: 4,
                     name: 'かわいい系男子',
-                    email: '２０歳',
+                    email: '２４歳',
                     imageUrl:'https://livedoor.blogimg.jp/hypnosismic_matome/imgs/d/e/deed083b.png'
                 },
                 {
